@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guia Definitivo De Markdown | Gustavo Mendel</title>
+    <meta name="author" content="Gustavo  Mendel">
+    <meta name="description" content="march &amp; april, looking forward to summer">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://mende1.github.io/blog/2020/guia-definitivo-de-markdown/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Gustavo Mendel</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/repositories/">repositories</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">cv</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/publications/">publications</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/projects/">projects</a>
+                </div>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Guia Definitivo De Markdown</h1>
+    <p class="post-meta">May 20, 2020</p>
+    <p class="post-tags">
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
+        ·  
+        <a href="/blog/tag/formatting">
+          <i class="fas fa-hashtag fa-sm"></i> formatting</a>  
+          <a href="/blog/tag/links">
+          <i class="fas fa-hashtag fa-sm"></i> links</a>  
+          
+        ·  
+        <a href="/blog/category/sample-posts">
+          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p align="center"><img src="https://user-images.githubusercontent.com/55323701/82506032-25bbd600-9ad5-11ea-8b5e-e7c699d385af.png" alt="drawing" width="150"></p>
+
+<h1 id="o-guia-definitivo-de-markdown-para-iniciantes">O Guia Definitivo de MarkDown para Iniciantes</h1>
+
+<h5 id="por-gustavo-mendel">Por Gustavo Mendel</h5>
+
+<p>Com a popularização do <strong>GitHub</strong>, e também da grande quantidade de novos programadores ultimamente, 
+a demanda para aprender <em>Markdown</em> aumentou bastante. <em>Markdown</em> é uma linguagem de marcação, parecido 
+com a sua companheira HTML.</p>
+
+<p>A maior utilidade dela atualmente certamente é para criar os famosos <strong>READMEs</strong> para seus repositórios
+no <strong>GitHub</strong>, e deixar o seu projeto mais ‘apresentável’. E é por isso que hoje trago aqui um guia 
+simples porém definitivo para aprender a tão famosa <em>Markdown</em> e a importancia de um bom <strong>README</strong> em seu projeto para iniciantes.</p>
+
+<h2 id="readme-e-sua-importância">README E SUA IMPORTÂNCIA</h2>
+
+<p>Todo projeto seu no GitHub terá seus códigos, seus arquivos, suas pastas todas jogadas lá. Um projeto 
+digno e bem estruturado precisa passar para o leitor <strong>o sentido do seu projeto, para que ele serve, 
+como funciona, quais linguagens, sistemas, funcionalidades, ferramentas você utilizou para criar seu 
+programa, como contribuir</strong>, e dezenas de outras informações necessárias tem que ficar bem explicitas 
+ao leitor quando o mesmo se deparar com seu repositório.</p>
+
+<p>E para isso existe um arquivinho bem simples chamado <strong>‘README.md’ ou ‘readme.md’</strong> em todo repositório 
+no mínimo organizado no GitHub. Perceba que o arquivo possui o sufixo <strong>‘.md’</strong>, essa é a terminologia 
+de arquivos <strong>Markdown</strong>. Ao criar o <strong>README.md</strong> em seu repositório, ao rolar um pouco para baixo a página
+inicial, todo o conteúdo formatado em Markdown irá aparecer, contendo todas as informações necessárias para o projeto.
+Para ver o conteúdo sem formatação, procure um ícone de um lápis, ou até clique no arquivo em si <strong><em>README.md</em></strong>, 
+assim você será encaminhado para a edição do arquivo.</p>
+
+<h2 id="alguns-pontos-e-detalhes-a-serem-adicionados-em-seu-arquivo-readmemd-para-melhorar-seu-projeto">Alguns pontos e detalhes a serem adicionados em seu arquivo readme.md para melhorar seu projeto:</h2>
+<p><em>Fica claro aqui, que são todas opicionais, cabe a você desenvolvedor a analisar e escolher quais colocar em seu repositório, lembrando que nem todos pontos a seguir cabem em todos os repositórios, depende do que se trata ele, se é um jogo, um programa, um código-fonte de um site, saiba escolher o que colocar.</em></p>
+
+<hr>
+
+<ol>
+  <li>
+<strong>Introdução</strong>
+    <blockquote>
+      <p><em>Uma breve apresentação sobre o que é o seu projeto, o que ele faz, e algumas informações úteis para serem ditas inicialmente.</em></p>
+    </blockquote>
+  </li>
+  <li>
+<strong>Índice</strong>
+    <blockquote>
+      <p><em>Assim como nesse readme.md também tem, é interessante ter um índice com os links para os tópicos que vão ser abordados em seu texto.</em></p>
+    </blockquote>
+  </li>
+  <li>
+<strong>Habilidaes adiquiridas ou requisitadas para o projeto</strong>
+    <blockquote>
+      <p><em>Se tens posse de um projeto que visa a aprendizagem, o seu próprio estudo ou até base para estudos de outras pessoas, é interessante colocar quais habilidades são requeridas para estudar/rodar o seu código, ou habilidades que vão ser adiquiridas se seguirem os seus estudos.</em></p>
+    </blockquote>
+  </li>
+  <li>
+<strong>Como executar</strong>
+    <blockquote>
+      <p><em>Se tens um programa que faz alguma coisa, um jogo, um código em determinada linguagem, é interessante adicionar a informação de como executar seus códigos, quais programas precisa no computador do usuário, comando para executar os códigos, algumas informaçãoes de quais arquivos precisa ter, entre diversos outros.</em></p>
+    </blockquote>
+  </li>
+  <li>
+<strong>Contribuindo</strong>
+    <blockquote>
+      <p><em>Se teu projeto é OpenSource, é natural que outros progamadores irão querer melhorar seu projeto, adicionando novos recursos, corrigindo algum bug, implementando alguma tecnologia, entre diversos outros, para isso ele deverá fazer pulls requests em seu código, seria muito interessante implementar algumas informações de como contribuir com o projeto, como fazer um Fork, como fazer o pull request, e até algumas preferências pessoais suas de como queres o pull request</em></p>
+    </blockquote>
+  </li>
+  <li>
+<strong>Créditos e Licença</strong>
+    <blockquote>
+      <p><em>É interessante também em alguns casos concluir com os créditos do repositório ou até mesmo da licença utilizada nele.</em>
+___</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p><strong><em>Note que não são todos os pontos a colocar, tão pouco são obrigatórios, pensei apenas em ajudar os iniciantes que estão criando teus repositórios no momento, e alguns pontos que são muito importantes para projetos simples. Claro que projetos mais avançados requerem muito mais pontos a ser colocados, e depende muito de um para outro. O foco destas dicas é pensando nos projetos mais básicos e iniciantes.</em></strong></p>
+
+<h1 id="a-sintaxe-do-markdown">A Sintaxe do MarkDown</h1>
+
+<ol>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#t%C3%ADtulos" rel="external nofollow noopener" target="_blank">Títulos</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#%C3%AAnfase" rel="external nofollow noopener" target="_blank">Ênfase</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#linha-horizontal" rel="external nofollow noopener" target="_blank">Linha Horizontal</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#cita%C3%A7%C3%B5es" rel="external nofollow noopener" target="_blank">Citações</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#listas" rel="external nofollow noopener" target="_blank">Listas</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#c%C3%B3digos" rel="external nofollow noopener" target="_blank">Códigos</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#links" rel="external nofollow noopener" target="_blank">Links</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#adicionando-imagens" rel="external nofollow noopener" target="_blank">Imagens</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#links-em-imagens" rel="external nofollow noopener" target="_blank">Links em imagens</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#tabela" rel="external nofollow noopener" target="_blank">Tabelas</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#html-embutido" rel="external nofollow noopener" target="_blank">HTML Embutido</a></li>
+  <li><a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#cr%C3%A9ditos" rel="external nofollow noopener" target="_blank">Créditos</a></li>
+</ol>
+
+<h2 id="títulos">Títulos</h2>
+
+<p>Inicialmente temos os ‘Headings’, ou Títulos, que é semelhante à linguagem de marcação HTML. Existe
+uma herança de títulos, em que diferem não só o tamanho da fonte, como também semânticamente. Ou seja,
+o título número 1 é mais importante que o título número 2, que por sua vez é mais importante que o 
+número 3, e assim por diante.</p>
+
+<p>Existem 6 títulos, que vai do título 1 (mais importante e por conseguinte maior e mais destacado) 
+até o título 6 (menos importante e por conseguinte menor e menos destacado).</p>
+
+<p>A sintaxe é simples:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Título 1
+## Título 2
+### Título 3
+#### Título 4
+##### Título 5
+###### Título 6
+</code></pre></div></div>
+
+<p>Vai de acordo com a quantidade de ‘#’.
+Exemplos:</p>
+
+<h1 id="aqui-um-título-1">Aqui um título 1</h1>
+<h2 id="aqui-um-título-2">Aqui um título 2</h2>
+<h3 id="aqui-um-título-3">Aqui um título 3</h3>
+<h4 id="aqui-um-título-4">Aqui um título 4</h4>
+<h5 id="aqui-um-título-5">Aqui um título 5</h5>
+<h6 id="aqui-um-título-6">Aqui um título 6</h6>
+
+<h2 id="ênfase">Ênfase</h2>
+
+<p>Você pode adicionar ênfase ao seu texto, como por exemplo o <strong>negrito</strong>, o <em>itálico</em>, ou até mesmo <strong><em>negrito e itálico</em></strong>.
+Lembre-se que além da aparência do seu texto, existe a semântica para ser seguida. Textos em negrito devem ser lidos com força,
+intensidade, e o itálico significa uma ênfase maior.</p>
+
+<h4 id="negrito">Negrito</h4>
+
+<p>Sintaxe do <strong>negrito:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Este é **negrito**
+This is __strong__
+</code></pre></div></div>
+
+<h4 id="itálico">Itálico</h4>
+
+<p>Sintaxe do <em>itálico:</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Este é *itálico*
+This is _italic_
+</code></pre></div></div>
+
+<h4 id="negrito-e-itálico">Negrito e itálico</h4>
+
+<p>Sintaxe do <strong><em>negrito e itálico:</em></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**_strong and em_**
+</code></pre></div></div>
+
+<h4 id="riscado">Riscado</h4>
+
+<p>Sintaxe do texto <del>riscado</del>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~riscado~~
+</code></pre></div></div>
+
+<h2 id="linha-horizontal">Linha horizontal</h2>
+
+<p>Você pode adicionar linhas horizontais para deixar o texto mais organizado e apresentável.
+Usando três hífens, três asteriscos ou três underscore:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hífens
+
+---
+
+Asteriscos
+
+***
+
+Underscore
+
+___
+</code></pre></div></div>
+
+<p>Learning Center:</p>
+
+<p>Hífens</p>
+
+<hr>
+
+<p>Asteriscos</p>
+
+<hr>
+
+<p>Underscore</p>
+
+<h2 id="citações">Citações</h2>
+
+<p>Para criar uma citação em bloco, adicione um ‘&gt;’ na frente de um parágrafo.</p>
+
+<p>As citações em bloco podem conter vários parágrafos. Adicione um ‘&gt;’ nas linhas em branco entre
+os parágrafos</p>
+
+<p>Sintaxe:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Para citações em uma linha:
+&gt; Esta é uma citação
+
+Em várias linhas:
+&gt; Citação 1
+&gt;
+&gt; Citação 2
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<p>Para citações em uma linha:</p>
+<blockquote>
+  <p>Esta é uma citação</p>
+</blockquote>
+
+<p>Em várias linhas:</p>
+<blockquote>
+  <p>Citação 1</p>
+
+  <p>Citação 2</p>
+</blockquote>
+
+<p>As cotações em bloco podem ser aninhadas. Adicione um ‘»’ na frente do parágrafo que você deseja aninhar.
+Por exemplo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Citação 1
+&gt;
+&gt;&gt; Citação 2
+</code></pre></div></div>
+<p>E assim temos:</p>
+<blockquote>
+  <p>Citação 1</p>
+
+  <blockquote>
+    <p>Citação 2</p>
+  </blockquote>
+</blockquote>
+
+<p>As citações de bloco podem conter outros elementos no formato Markdown. Nem todos os elementos podem
+ser usados, você precisará experimentar para ver quais funcionam.
+Exemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; ##### The quarterly results look great!
+&gt;
+&gt; - Revenue was off the chart.
+&gt; - Profits were higher than ever.
+&gt;
+&gt; *Everything* is going **well**.
+</code></pre></div></div>
+
+<p>Resultado:</p>
+<blockquote>
+  <h5 id="the-quarterly-results-look-great">The quarterly results look great!</h5>
+
+  <ul>
+    <li>Revenue was off the chart.</li>
+    <li>Profits were higher than ever.</li>
+  </ul>
+
+  <p><em>Everything</em> is going <strong>well</strong>.</p>
+</blockquote>
+
+<h2 id="listas">Listas</h2>
+
+<p>Você pode organizar listas, podendo ser ordenadas ou não.</p>
+
+<p><strong><em>Listas Ordenadas</em></strong></p>
+
+<p>Usando (número)(ponto) você pode ordenar as listas numericamente, como por exemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Primeiro
+2. Segundo
+3. Terceiro
+4. Quarto
+</code></pre></div></div>
+
+<p>Vai gerar o seguinte resultado:</p>
+
+<ol>
+  <li>Primeiro</li>
+  <li>Segundo</li>
+  <li>Terceiro</li>
+  <li>Quarto</li>
+</ol>
+
+<p>Itens da lista de aninhamento</p>
+
+<p>Para aninhar itens de linha em uma lista ordenada, recue os itens quatro espaços ou uma guia.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Primeiro item
+2. Segundo item
+3. Terceiro item
+    1. Indentado item
+    2. Indentado item
+4. Quarto item
+</code></pre></div></div>
+<p>Irá gerar:</p>
+
+<ol>
+  <li>Primeiro item</li>
+  <li>Segundo item</li>
+  <li>Terceiro item
+    <ol>
+      <li>Indentado item</li>
+      <li>Indentado item</li>
+    </ol>
+  </li>
+  <li>Quarto item</li>
+</ol>
+
+<p><strong><em>Listas não Ordenadas</em></strong></p>
+
+<p>Para criar uma lista não ordenada, adicione traços (-), asteriscos (*) ou sinais de adição (+) na frente de
+itens de linha.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Exemplo 1
+
+* Exemplo 2
+
++ Exemplo 3
+</code></pre></div></div>
+
+<p>Vai gerar:</p>
+
+<ul>
+  <li>
+    <p>Exemplo 1</p>
+  </li>
+  <li>
+    <p>Exemplo 2</p>
+  </li>
+  <li>
+    <p>Exemplo 3</p>
+  </li>
+</ul>
+
+<p><strong><em>Lista de tarefas</em></strong></p>
+
+<p>Podemos criar também uma lista de tarefas, com a CheckBox preenchida ou não. Vejamos o exemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] Esta é uma CheckBox não marcada
+- [x] Esta é uma CheckBox marcada
+</code></pre></div></div>
+
+<p>Learning Center:</p>
+
+<ul class="task-list">
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Esta é uma CheckBox não marcada</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled checked>Esta é uma CheckBox marcada</li>
+</ul>
+
+<h2 id="códigos">Códigos</h2>
+
+<p>Para colocar algum código sem que ele esteja formatado, então poderá colocar algum código em <em>Markdown</em> dentro
+dos trechos de códigos e ele não será formatado, será mostrado exatamento como escreveu, é desse jeito que eu
+consigo mostrar para vocês os códigos como são originalmente antes de serem formatados em <em>.md</em>.</p>
+
+<p>Temos o trecho simples, sendo de apenas uma linha, usando uma crase para abrir e outra para fechar:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>` este é um exemplo `
+</code></pre></div></div>
+<p>Resultado:</p>
+
+<p><code class="language-plaintext highlighter-rouge">este é um exemplo</code></p>
+
+<p>E também temos a mais completa, que podemos colocar quantas linhas de códigos nós quisermos.
+Use três crases ( ´´´ ) ou três tils ( ~~~ ) para abrir e três para fechar, desse jeito:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ```
+    Este é nosso
+    Querido Exemplo
+    
+    **Teste**
+    
+    Nota que não irá formatar o negrito!
+    ```
+</code></pre></div></div>
+
+<p>Vai gerar:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Este é nosso
+Querido Exemplo
+**Teste**
+Nota que não irá formatar o negrito!
+</code></pre></div></div>
+
+<p>Para especificar qual lingugem seu código é feito, isso ajuda tanto semânticamente como também na coloração do código, basta adicionar o nome da lingugem logo após os três primeiros tils ou crases.
+Por exemplo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ~~~python
+    s = "Sintaxe do Pythong"
+    print s
+    ~~~
+</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">"Sintaxe do Python"</span>
+<span class="k">print</span> <span class="n">s</span>
+</code></pre></div></div>
+
+<p>Para saber quais lingugens são suportadas por este mecanismo, clique <a href="https://pygments.org/languages/" rel="external nofollow noopener" target="_blank">aqui</a> e veja a listagem do Pygments.</p>
+
+<p><strong><em>Nota:</em></strong> Para interligar um código dentro do outro, assim como eu fiz de exemplo para vocês: Abra o primeiro trecho de código com as três crases, e feche de imediato. Dentro desse código use a indentação de 4 espaços, e assim poderá abrir outro código sem formatar.</p>
+
+<h2 id="links">Links</h2>
+
+<p>É possível colocar algum link em seu <em>‘Readme’</em>, e ainda colocá-lo por debaixo de uma palavra, é o chamado link-âncora, acessando-o ao clicar na palavra.
+Entre colchetes [ ] a palava que deseja por debaixo dos panos. E entre parentêses ( ) o link para acesso. Vejamos o exemplo do código:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Clique [aqui](https://github.com) para acessar à página do GitHub.
+</code></pre></div></div>
+<p>Resultado:
+Clique <a href="https://github.com" rel="external nofollow noopener" target="_blank">aqui</a> para acessar à página do GitHub.</p>
+
+<p>Lembre-se que pode criar links para outros repositórios seus no GitHub, também é possível acessar outro arquivo no mesmo repositório, e até mesmo a posição da página do leitor no mesmo arquivo. Por exemplo, clique <a href="https://github.com/gustavo-mendel/guia-definitivo-de-markdown/blob/master/README.md#a-sintaxe-do-markdown" rel="external nofollow noopener" target="_blank">aqui</a> para acessar o título ‘Sintaxe’ neste mesmo arquivo. Tais possibilidades deixam seu <em>README</em> bem mais apresentável, e com uma interatividade maior, demonstrando que o escritor do código entende bem de <em>MarkDown</em>.</p>
+
+<p>Para links sem uma palavra por cima do link, use ‘&lt; &gt;’ para envolver o link desejado, assim o link aparecerá por inteiro ao leitor. Exemplo:
+<a href="https://google.com.br" rel="external nofollow noopener" target="_blank">https://google.com.br</a></p>
+
+<h2 id="adicionando-imagens">Adicionando imagens</h2>
+
+<p>Semelhante ao mecanismo de adicionar links-âncora, podemos adicionar imagens para nosso aquivos.md também, mas tome cuidado com a resolução da imagem, imagens grandes podem estar em linhas individuais, para serem exibidas em maior tamanho.</p>
+
+<p>A sintaxe é parecida, apenas adicione uma exclamação (!) no início.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Alt ou título da imagem](URL da imagem)
+</code></pre></div></div>
+
+<h2 id="links-em-imagens">Links em imagens</h2>
+
+<p>Você pode fazer com que uma imagem carregue um link por debaixo dos panos, e ao clicar nela, acesse o link. É uma mescla tanto semânticamente quanto na sintaxe. Vejamos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Clique na imagem para acessar o Google.
+[![Logo_Google_2013_Official svg](https://user-images.githubusercontent.com/5532...](https://google.com.br)
+</code></pre></div></div>
+
+<p>Clique na imagem para acessar o Google.</p>
+
+<p><a href="https://google.com.br" rel="external nofollow noopener" target="_blank"><img src="https://user-images.githubusercontent.com/55323701/82508957-fad58000-9adc-11ea-899a-b43ba9f83fd8.png" alt="Logo_Google_2013_Official svg (1) (7)"></a></p>
+
+<h2 id="tabela">Tabela</h2>
+
+<p>Escolha os títulos das colunas e use <code class="language-plaintext highlighter-rouge">|</code> para delimitar as colunas. Depois, utilize hífen <code class="language-plaintext highlighter-rouge">-</code> na segunda linha para indicar que acima estão os títulos das colunas, usando novamente o <code class="language-plaintext highlighter-rouge">|</code> para delimitar colunas. Veja um exemplo abaixo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Teste   | Exemplo
+------- | ------
+Teste 1 | Exemplo 1
+Teste 2 | Exemplo 2
+Teste 3 | Exemplo 3
+Teste 4 | Exemplo 4
+</code></pre></div></div>
+
+<p>No Learning Center irá aparecer:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Teste</th>
+      <th>Exemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Teste 1</td>
+      <td>Exemplo 1</td>
+    </tr>
+    <tr>
+      <td>Teste 2</td>
+      <td>Exemplo 2</td>
+    </tr>
+    <tr>
+      <td>Teste 3</td>
+      <td>Exemplo 3</td>
+    </tr>
+    <tr>
+      <td>Teste 4</td>
+      <td>Exemplo 4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Para especificar o tipo de alinhamento que deseja ter nas tabelas, utilize dois pontos <code class="language-plaintext highlighter-rouge">:</code> ao lado do campo horizontal de hífens <code class="language-plaintext highlighter-rouge">---</code>, na segunda linha da sua tabela. Veja abaixo:</p>
+
+<ul>
+  <li>Alinhado a esquerda: usar <code class="language-plaintext highlighter-rouge">:</code> no lado esquerdo (alinhamento padrão)</li>
+  <li>Alinhado a direita: usar <code class="language-plaintext highlighter-rouge">:</code> no lado direito</li>
+  <li>Centralizado: usar <code class="language-plaintext highlighter-rouge">:</code> dos dois lados</li>
+</ul>
+
+<p>Exemplo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alinhado a esquerda | Centralizado | Alinhado a direita
+:--------- | :------: | -------:
+Exemplo | Exemplo | Exemplo
+</code></pre></div></div>
+
+<p>Learning Center:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Alinhado a esquerda</th>
+      <th style="text-align: center">Centralizado</th>
+      <th style="text-align: right">Alinhado a direita</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Exemplo</td>
+      <td style="text-align: center">Exemplo</td>
+      <td style="text-align: right">Exemplo</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="html-embutido">HTML Embutido</h2>
+
+<p>Você também pode usar HTML bruto no seu Markdown, e geralmente funcionará muito bem.</p>
+
+<p>Vejamos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;dl&gt;
+  &lt;dt&gt;Lista definitiva&lt;/dt&gt;
+  &lt;dd&gt;É algo que as pessoas usam às vezes.&lt;/dd&gt;
+
+  &lt;dt&gt;Markdown no HTML&lt;/dt&gt;
+  &lt;dd&gt;*Não* funciona **muito bem**. Use as &lt;em&gt;tags&lt;/em&gt; do HTML&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre></div></div>
+
+<dl>
+  <dt>Lista definitiva</dt>
+  <dd>É algo que as pessoas usam às vezes.</dd>
+
+  <dt>Markdown no HTML</dt>
+  <dd>*Não* funciona **muito bem**. Use as <em>tags</em> do HTML</dd>
+</dl>
+
+<h2 id="extra-emojis">
+<del>Extra:</del> Emojis</h2>
+
+<p>O MarkDown também permite colocar alguns emojis em seus textos, não abuse deles para não parecer um circo de diversões, só em alguns casos bem específicos.</p>
+
+<p>:nome_do_emoji:</p>
+
+<p>Alguns exemplos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:smile: :fire: :file_folder: :space_invader: :computer:
+</code></pre></div></div>
+
+<p><img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"> <img class="emoji" title=":fire:" alt=":fire:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f525.png" height="20" width="20"> <img class="emoji" title=":file_folder:" alt=":file_folder:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c1.png" height="20" width="20"> <img class="emoji" title=":space_invader:" alt=":space_invader:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f47e.png" height="20" width="20"> <img class="emoji" title=":computer:" alt=":computer:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png" height="20" width="20"></p>
+
+<p>Para conferir uma lista com os emojis e suas sintaxes, clique aqui: <a href="https://gist.github.com/rxaviers/7360908" rel="external nofollow noopener" target="_blank">EMOJIS</a></p>
+
+<h2 id="créditos">Créditos</h2>
+
+<p>Copyright (C) 2020 by Gustavo Mendel</p>
+
+    </div>
+  </article>
+
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/my-arch-kde/">my arch kde</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/tables/">displaying beatiful tables with Bootstrap Tables</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/table-of-contents/">a post with table of contents</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/giscus-comments/">a post with giscus comments</a>
+  </li>
+
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2023 Gustavo  Mendel. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
