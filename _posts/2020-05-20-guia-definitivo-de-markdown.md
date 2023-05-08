@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: o guia definitivo de markdown
 date:   2020-05-20 16:40:16
 description: march & april, looking forward to summer
 tags: formatting links
@@ -9,7 +9,7 @@ categories: sample-posts
 
 <p align="center"><img src="https://user-images.githubusercontent.com/55323701/82506032-25bbd600-9ad5-11ea-8b5e-e7c699d385af.png" alt="drawing" width="150"/></p>
 
-# O Guia Definitivo de MarkDown para Iniciantes
+# O Guia Definitivo de Markdown para Iniciantes
 
 ##### Por Gustavo Mendel
 
