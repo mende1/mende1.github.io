@@ -1,0 +1,5 @@
+Engenheiro de Software com experiências voluntárias e de Estágio. Atualmente estou cursando Ciências da Computação na UFBA e sou Estagiário em Desenvolvimento Ruby on Rails.
+
+Sou um jovem entusiasta da tecnologia e do aprendizado. Sempre buscando me aprimorar através da prática e de experiências reais. Vim do interior para a capital baiana em busca de melhores condições de estudo e também de oportunidades de crescimento pessoal. Sempre fui apaixonado por computadores e seu funcionamento, foi quando tive a chance de estudar e trabalhar nessa área, quando comecei minha jornada em 2019.
+
+Tive experiências voluntárias na Empresa Jr. de computação da UFBA, InfoJr UFBA, onde aprendi e coloquei em prática o Desenvolvimento Web Full-Stack, Infraestrutura e Segurança, área da qual tenho grande interesse, e por fim, Líder da Diretoria de Projetos. Também tive experiências mais concretas em um Estágio, onde atuei como Engenheiro de Software.

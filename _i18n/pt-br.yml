@@ -1,0 +1,15 @@
+titles:
+  about: sobre
+  blog: blog
+  cv: cv
+  projects: projetos
+  repositories: repositórios
+  unk: página não encontrada
+projects:
+  titles:
+    project1: Projeto 1
+    project2: Projeto 2
+    project3: Projeto 3
+    project4: Projeto 4
+    project5: Projeto 5
+    project6: Projeto 6

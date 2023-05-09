@@ -16,7 +16,7 @@ footer_text: >
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: pt-br # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 👨‍💻  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://mende1.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -55,7 +55,7 @@ navbar_fixed: true
 footer_fixed: false
 
 # Dimensions
-max_width: 860px
+max_width: 960px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -104,8 +104,7 @@ facebook_id: # your facebook id
 youtube_id: UCfCRH0MeqXOiyhIwgIM7oGw # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: 374951479728930817 # your discord id (18-digit unique numerical identifier)
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: 
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -164,11 +163,6 @@ disqus_shortname: al-folio # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
   projects:
     output: true
     permalink: /projects/:path/
@@ -221,6 +215,7 @@ plugins:
   - jekyll-imagemagick
   - jekyll-link-attributes
   - jekyll-minifier
+  - jekyll-multiple-languages-plugin
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
@@ -234,6 +229,12 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+
+# -----------------------------------------------------------------------------
+# Jekyll Multiple Languages
+# -----------------------------------------------------------------------------
+languages: ["pt-br", "en"]
+default_locale_in_subfolder: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier

@@ -1,0 +1,5 @@
+Software Engineer with volunteer and internship experiences. Currently studying Computer Science at UFBA and a Ruby on Rails Developer Intern.
+
+I am an enthusiastic lover of technology and learning. Always looking to improve myself through practice and real experiences. I came from the countryside to the capital of Bahia-Brazil looking for better study conditions and also opportunities for personal growth. I've always been passionate about computers and how they work, that's why once I had the chance to study and work in this area back in 2019, I was incredibly excited to put into practice what I had already been learning in my spare time.
+
+I have volunteer experiences at Junior Enterprise of computing at UFBA, InfoJr UFBA, where I learned and put into practice Full-Stack Web Development, Infrastructure&Security, an area in which I have great interest, and finally, Leader of the Project Branch, being CTO. I also have concrete experiences in an Internship, where I worked as a Software Engineer.
