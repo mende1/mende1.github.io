@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mende1.github.io/en/sitemap.xml
