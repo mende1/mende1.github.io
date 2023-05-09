@@ -2,7 +2,7 @@
 layout: about
 title: titles.about
 permalink: /
-subtitle: 22. Computer Science. Great.
+subtitle: titles.subtitle
 
 profile:
   align: right

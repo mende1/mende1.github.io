@@ -1,10 +1,17 @@
 titles:
   about: sobre
+  subtitle: 22. Ciência da Computação. Exercitar. Ótimo.
   blog: blog
   cv: cv
   projects: projetos
   repositories: repositórios
   unk: página não encontrada
+descriptions:
+  about: sobre
+  blog: blogging
+  projects: Uma crescente coleção de seus projetos interessantes.
+  repositories: Edite o `_data/repositories.yml` e mude as listas `github_users` e `github_repos` para incluir seu próprio perfil do GitHub e repositórios.
+  unk: Parece que ocorreu um erro. Não existe nada aqui.
 projects:
   titles:
     project1: Projeto 1
@@ -13,3 +20,10 @@ projects:
     project4: Projeto 4
     project5: Projeto 5
     project6: Projeto 6
+  descriptions:
+    project1: um projeto com imagem de fundo
+    project2: um projeto com imagem de fundo
+    project3: um projeto que redireciona pra outro website
+    project4: outro sem imagem
+    project5: um projeto com imagem de fundo
+    project6: um projeto sem imagem

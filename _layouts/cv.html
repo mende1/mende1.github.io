@@ -12,7 +12,11 @@ layout: default
                 </a>
               {% endif %}
             </h1>
-            <p class="post-description">{{ page.description }}</p>
+            <p class="post-description">
+              {% if page.description %}
+                {% t page.description %}
+              {% endif %}
+            </p>
           </header>
 
           <article>
