@@ -1,0 +1,59 @@
+titles:
+  about: sobre
+  subtitle: 22. Ciência da Computação. Exercitar. Ótimo.
+  blog: blog
+  cv: cv
+  projects: projetos
+  repositories: repositórios
+  unk: página não encontrada
+descriptions:
+  about: sobre
+  blog: blogging
+  projects: Uma crescente coleção de seus projetos interessantes.
+  repositories: Edite o `_data/repositories.yml` e mude as listas `github_users` e `github_repos` para incluir seu próprio perfil do GitHub e repositórios.
+  unk: Parece que ocorreu um erro. Não existe nada aqui.
+projects:
+  titles:
+    project1: Projeto 1
+    project2: Projeto 2
+    project3: Projeto 3
+    project4: Projeto 4
+    project5: Projeto 5
+    project6: Projeto 6
+  descriptions:
+    project1: um projeto com imagem de fundo
+    project2: um projeto com imagem de fundo
+    project3: um projeto que redireciona pra outro website
+    project4: outro sem imagem
+    project5: um projeto com imagem de fundo
+    project6: um projeto sem imagem
+months:
+  long:
+    january: Janeiro
+    february: Fevereiro
+    march: Março
+    april: Abril
+    may: Maio
+    june: Junho
+    july: Julho
+    august: Agosto
+    september: Setembro
+    october: Outubro
+    november: Novembro
+    december: Dezembro
+  short:
+    january: Jan
+    february: Fev
+    march: Mar
+    april: Abr
+    may: Mai
+    june: Jun
+    july: Jul
+    august: Ago
+    september: Set
+    october: Out
+    november: Nov
+    december: Dez
+pagination:
+  newer: Recentes
+  older: Antigas
